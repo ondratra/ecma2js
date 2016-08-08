@@ -75,7 +75,7 @@ gulp.task('buildStats', function () {
         }
 
         if (sizeBuildMinified.size) {
-            gutil.log('Build size after minification is ' + sizeBuildMinified.prettySize + ' (' + parseInt(sizeBuildMinified.size / sizeClean.size * 100) + '% of original size and ' + parseInt(sizeBuildMinified.size / sizeBuild.size * 100) + '% of build)');
+            gutil.log('Build size after minification is ' + sizeBuildMinified.prettySize + ' (' + parseInt(sizeBuildMinified.size / sizeClean.size * 100) + '% of original size and ' + parseInt(sizeBuildMinified.size / sizeBuild.size * 100) + '% of build size)');
         } else {
             gutil.log('Build minification not yet done');
         }

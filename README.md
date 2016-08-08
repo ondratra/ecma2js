@@ -1,4 +1,7 @@
 # ecma2js
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
+
 Skeleton for projects that needs to convert ECMA6(also known as ES2015) code to pure javascript compatible
 with browsers that currently supports limited set of ECMA features.
 
