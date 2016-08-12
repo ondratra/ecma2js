@@ -2,6 +2,7 @@
 const browserify = require('browserify');
 const babelify = require('babelify');
 const watchify = require('watchify');
+const errorify = require('errorify');
 const gulp = require('gulp');
 const rename = require('gulp-rename');
 const source = require('vinyl-source-stream');
@@ -85,6 +86,7 @@ gulp.task('buildStats', function () {
 // recompile ECMA to js after some file changed (main task during development)
 gulp.task('browserifyWatch', function () {
     const bundler = watchify(getBrowserify());
+    bundler.plugin(errorify, {/* replacer: function (error) { return 'custom error handler: ' + error; } */});
     bundler.on('update', rebundle);
 
     function rebundle() {
