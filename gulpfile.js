@@ -101,4 +101,7 @@ gulp.task('browserifyWatch', function () {
 
 
 // default task: create full build
-gulp.task('default', ['uglify']);
+gulp.task('default', ['uglify'], function () {
+    // after build is done, print stats
+    gulp.start('buildStats');
+});
