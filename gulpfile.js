@@ -99,9 +99,14 @@ gulp.task('browserifyWatch', function () {
     return rebundle();
 });
 
+gulp.task('clean', function () {
+    del([destFolder + '**/*']);
+});
 
-// default task: create full build
-gulp.task('default', ['uglify'], function () {
+gulp.task('build', ['uglify'], function () {
     // after build is done, print stats
     gulp.start('buildStats');
 });
+
+// default task: create full build
+gulp.task('default', ['build']);

@@ -18,6 +18,7 @@ npm install
 gulp browserify # converts ECMA to pure js and bundles it into one file
 gulp browserifyWatch # convertion on source file(s) change
 gulp uglify # minifies build
+gulp clean # removes all builded files
 gulp buildStats # prints original, build and minified file sizes
 ```
 
