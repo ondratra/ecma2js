@@ -42,3 +42,6 @@ That process unfortunately breaks usual ECMA way to get class name `this.constru
 To workaround the issue function name mangeling is turned off, but you can enable it if you don't need to ask
 for class names in that manner(it will save some extra bytes). Look for `{mangle: { keep_fnames: true}` in `gulpfile.js`.
 
+## Rollup note
+Build uses [Rollupjs](http://rollupjs.org/) which reduces build sise but due to it's nature may potentially cause problems.
+See rollup troubleshooting on library's web page for more information.
