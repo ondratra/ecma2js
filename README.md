@@ -6,7 +6,7 @@ Skeleton for projects that needs to convert ECMA6(also known as ES2015) code to 
 with browsers that currently supports limited set of ECMA features.
 
 # Install
-Copy or integrate content of files `gulfile.js` and `package.json`(only it's devDependencies section is relevant)
+Copy or integrate content of files `gulfile.js` and `package.json`(don't forget to replace name, version, etc.)
 into your own project. In top of `gulpfile.js` change your configuration(source folder, build output folder, etc.). Then run:
 
 ```
